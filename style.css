@@ -1,0 +1,51 @@
+body{
+    background-image: url(img/cloud.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+
+#userCity{
+    font-size: xx-large;
+    font-weight: 700;
+    color: whitesmoke;
+}
+/* #btn1{
+    border-radius: 22px;
+    padding: 1px 20px;
+    margin-left: 5px; */
+    /* display: flex; */
+    /* margin-right: 10px; */
+    /* justify-content: end; */
+/* } */
+#img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#temp{
+    color: whitesmoke;
+    font-size: 90px;
+    font-weight: 700;
+}
+#condition{
+    font-size: xx-large;
+    font-weight: 700;
+    color: whitesmoke;
+    margin-left: 200px;
+}
+
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 50px; */
+    color: whitesmoke;
+    margin-top: 0px;
+    font-weight: 900;
+}
