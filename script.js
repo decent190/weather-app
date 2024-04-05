@@ -13,8 +13,8 @@ const checkWhether=async()=>{
     let myWind = Math.round(Number(mySpeed+myGust))
     
    
-    temp.innerHTML=`<span style="color:black; font-size:20px;">  Temp:</span>${Math.round(convertedResponse.main.temp)}℃  `
-    show.innerHTML = `<img id="img1" class="text-center" src="${convertedResponse.weather.icon}" />`
+    temp.innerHTML=`<span style="color:black; font-size:20px;">  Temp:</span>${Math.round(convertedResponse.main.temp)}℃ <br> <span style="color:black; font-size:20px;">${okay}, ${dat} </span>`
+    // show.innerHTML = `<img id="img1" class="text-center" src="${convertedResponse.weather.icon}" />`
     wind.innerHTML=`${myWind} km/h`
     humidity.innerHTML=`${convertedResponse.main.humidity}%`
     pressure.innerHTML=`${convertedResponse.main.pressure} mb`
@@ -22,3 +22,5 @@ const checkWhether=async()=>{
     userCity.innerHTML=`<span style="color:black;">  location:</span>${convertedResponse.name}`
     condition.innerHTML=`${convertedResponse.weather[0].main}`
 }
+let okay = new Date().toLocaleTimeString()
+let dat= new Date().toLocaleDateString()
