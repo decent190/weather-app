@@ -14,13 +14,13 @@ const checkWhether=async()=>{
     
    
     temp.innerHTML=`<span style="color:black; font-size:20px;">  Temp:</span>${Math.round(convertedResponse.main.temp)}℃ <br> <span style="color:black; font-size:20px;">${okay}, ${dat} </span>`
-    // show.innerHTML = `<img id="img1" class="text-center" src="${convertedResponse.weather.icon}" />`
-    wind.innerHTML=`${myWind} km/h`
-    humidity.innerHTML=`${convertedResponse.main.humidity}%`
-    pressure.innerHTML=`${convertedResponse.main.pressure} mb`
-    visibility.innerHTML=`${convertedResponse.visibility}`
+    show.innerHTML = `<img id="img1" class="text-center" src="${convertedResponse.weather[0].icon}" />`
+    wind.innerHTML=` <span style="color:white; ">${myWind} km/h`
+    humidity.innerHTML=` <span style="color:white; ">${convertedResponse.main.humidity}%`
+    pressure.innerHTML=` <span style="color:white; "> ${convertedResponse.main.pressure} mb`
+    visibility.innerHTML=` <span style="color:white; ">${convertedResponse.visibility}`
     userCity.innerHTML=`<span style="color:black;">  location:</span>${convertedResponse.name}`
-    condition.innerHTML=`${convertedResponse.weather[0].main}`
+    // condition.innerHTML=`${convertedResponse.weather[0].main}`
 }
 let okay = new Date().toLocaleTimeString()
 let dat= new Date().toLocaleDateString()

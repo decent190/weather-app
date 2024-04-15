@@ -44,7 +44,18 @@ body{
     display: flex;
     justify-content: space-between;
     /* gap: 50px; */
-    color: whitesmoke;
-    margin-top: 0px;
     font-weight: 900;
+}
+.wind{
+    border-radius: 12px;
+    border: solid gray 1px;
+    height: auto;
+    width: auto;
+    box-shadow: inset;
+    padding: 10px  6px 10px 6px;
+    background-color: #0165B3;
+    justify-content: center;
+    text-align: center;
+    /* margin-left: -5px !important; */
+
 }
